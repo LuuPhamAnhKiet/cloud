@@ -2,7 +2,7 @@
 // $conn = mysqli_connect('localhost', 'root', '','tune_source')
 // or die("Can not connect database".mysqli_connect_error());
 ?><?php
-$conn = pg_connect("postgres://eqsswfxaphixgx:79c5717c086ecfdb796105255f2a0f48e0ec8b5c2278c2e680b24bb8689abc65@ec2-54-145-139-208.compute-1.amazonaws.com:5432/d200jeu77acrei");
+$conn = pg_connect("postgres://vmotpzmdbvmdsf:c6912b5d0b13b7eb15f6c18fc385a9dc68b0c803fabdc5a3437e373778a37510@ec2-54-157-16-196.compute-1.amazonaws.com:5432/d2rvvjjjc40cjd");
 	echo 'Connected Successfully!!!';
 	if(!$conn)
 	{
