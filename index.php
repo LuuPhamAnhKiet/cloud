@@ -26,10 +26,9 @@
 
 <body>
 <?php
-
+session_start();
 //phpinfo();
 include_once("connection.php");
-session_start();
 ?>
     
     
