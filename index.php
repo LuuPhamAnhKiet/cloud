@@ -116,7 +116,7 @@ include_once("connection.php");
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> sieungccgcc19186@fpt.edu.vn</li>
+                <li><i class="fa fa-envelope"></i> kietlpagcc200083@fpt.edu.vn</li>
                 <li>A shopping website for toy</li>
             </ul>
         </div>
@@ -143,7 +143,7 @@ include_once("connection.php");
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
                             <ul>
-                                <li><i class="fa fa-envelope"></i> sieungcc19186@fpt.edu.vn</li>
+                                <li><i class="fa fa-envelope"></i> kietlpagcc200083@fpt.edu.vn</li>
                                 <li>A shopping website for toy </li>
                             </ul>
                         </div>
@@ -402,9 +402,9 @@ include_once("connection.php");
                             <a href="./index.html"><img src="ATNtoy/Logo.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 160 Road 30/4 An Phu, Ninh Kieu, Can Tho, Vietnam</li>
-                            <li>Phone: +84 90 785 3006</li>
-                            <li>Email: sieungcc19186@fpt.edu.vn</li>
+                            <li>Address: 311, Ninh Kieu, Can Tho, Vietnam</li>
+                            <li>Phone: +84 949 010 942</li>
+                            <li>Email:kietlpagcc200083@fpt.edu.vn</li>
                         </ul>
                     </div>
                 </div>
@@ -449,7 +449,7 @@ include_once("connection.php");
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer__copyright">
-                        <div class="footer__copyright__text"> Sieu Nguyen</div>
+                        <div class="footer__copyright__text"> Luu Pham Anh Kiet</div>
                         <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
                     </div>
                 </div>
