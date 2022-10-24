@@ -141,9 +141,8 @@
 							VALUES('$id','$proname', $price,'$short','$detail','".date('Y-m-d H:i:s')."',$qty,'$filePic','$category', '$branchlist','$supplierlist')";
 							
 						pg_query($conn, $sqlstring);
-						echo "You have add successfully";
-						echo '<meta http-equiv="refresh" content="0;URL=?page=content"/>';
-
+						echo'<li>You have add successfully</li>';
+						
 
 					}	
 					else {
