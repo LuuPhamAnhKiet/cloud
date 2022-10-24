@@ -117,11 +117,11 @@ include_once("connection.php");
         <div class="humberger__menu__contact">
             <ul>
                 <li><i class="fa fa-envelope"></i> kietlpagcc200083@fpt.edu.vn</li>
-                <li>A shopping website for toy</li>
+                <li>ATN shop</li>
             </ul>
         </div>
         <div class="col-lg-3">
-                    <div class="hero__categories" style="background-color:blue">
+                    <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
                             <span>All departments</span>
@@ -150,12 +150,12 @@ include_once("connection.php");
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__right">
-                            <div class="header__top__right__social">
+                            <!-- <div class="header__top__right__social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                 <a href="#"><i class="fa fa-linkedin"></i></a>
                                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                            </div>
+                            </div> -->
                             <div class="header__top__right__language">
                                 <img src="img/language.png" alt="">
                                 <div>English</div>
@@ -230,6 +230,7 @@ include_once("connection.php");
                                     <ul class="header__menu__dropdown">
                                     <li><a href="?page=cat">Category Management</a></li>
                                     <li><a href="?page=branch">Branch Management</a></li>
+                                    <li><a href="?page=Supp">Supplier Management</a></li>
                                     </ul>
                                     <li><a href="?page=content">Pages</a>
                                 <ul class="header__menu__dropdown">
@@ -375,12 +376,23 @@ include_once("connection.php");
         {
             include_once('add_branch.php');
         }
-        
         else if($page=="Fea")
     {
         include_once('Featured.php');
     }
         
+        else if($page=="Supp")
+    {
+        include_once('Supplier.php');
+    }   
+    else if($page=="addSupp")
+    {
+        include_once('add_supplier.php');
+    }
+    else if($page=="updateSupp")
+    {
+        include_once('update_Supp.php');
+    }    
        
     }else
     {
@@ -399,7 +411,7 @@ include_once("connection.php");
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="ATNtoy/Logo.png" alt=""></a>
+                            <a href="./index.php"><img src="ATNtoy/Logo.png" alt=""></a>
                         </div>
                         <ul>
                             <li>Address: 311, Ninh Kieu, Can Tho, Vietnam</li>
@@ -437,12 +449,12 @@ include_once("connection.php");
                             <input type="text" placeholder="Enter your mail">
                             <button type="submit" class="site-btn">Subscribe</button>
                         </form>
-                        <div class="footer__widget__social">
+                        <!-- <div class="footer__widget__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -507,7 +519,7 @@ include_once("connection.php");
 		
 			while ($row=pg_fetch_array($result, NULL, PGSQL_ASSOC))
 			{
-				echo '<li ><a  href="?page=shop-grid&&id='.$row['cat_id'].'">'.$row['cat_name'].'</a></li>';
+				echo '<li ><a  href="?page=shop-grid&&id='.$row['cat_id'].'">'.$row['cat_name'].'</a></li>';    
 			}
     }
     

@@ -34,14 +34,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero__item set-bg" data-setbg="ATNtoy/background.jpg">
+                    <!-- <div class="hero__item set-bg" data-setbg="ATNtoy/12345.jpg">
                         <div class="hero__text">
                             <span>NEW ON</span>
                             <h2>ATN <br />TOY </h2> 
                             
                             <a href="?page=shop-grid" class="primary-btn">SHOP NOW</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
