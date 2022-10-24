@@ -142,6 +142,8 @@
 							
 						pg_query($conn, $sqlstring);
 						echo'<li>You have add successfully</li>';
+						echo '<meta http-equiv="refresh" content="0;URL=?page=content"/>';
+
 
 					}	
 					else {
