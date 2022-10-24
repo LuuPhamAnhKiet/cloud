@@ -121,7 +121,7 @@ include_once("connection.php");
             </ul>
         </div>
         <div class="col-lg-3">
-                    <div class="hero__categories">
+                    <div class="hero__categories" style="background-color:blue">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
                             <span>All departments</span>
