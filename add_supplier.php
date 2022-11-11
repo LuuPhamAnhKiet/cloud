@@ -5,10 +5,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Branch Management</h2>
+                        <h2>Supplier Management</h2>
                         <div class="breadcrumb__option">
                             <a href="?page=content">Home</a>
-                            <span>Branch Management</span>
+                            <span>Supplier Management</span>
                         </div>
                     </div>
                 </div>

@@ -24,26 +24,26 @@
 		if(isset($_GET["id"]))
 		{
 			$id = $_GET['id'];
-			$result = pg_query($conn, "SELECT * from branch where branch_id = '$id'");
+			$result = pg_query($conn, "SELECT * from supplier where supplierid = '$id'");
 			$row = pg_fetch_array($result, NULL, PGSQL_ASSOC);
-			$branch_id = $row['branch_id'];
-			$branch_name = $row['branch_name'];
+			$supplierid = $row['supplierid'];
+			$suppliername = $row['suppliername'];
 	?>
 <div class="container">
-	<h2>Updating Product Branch</h2>
+	<h2>Updating Product Supplier</h2>
 			 	<form id="form1" name="form1" method="post" action="" class="form-horizontal" role="form">
 				 <div class="form-group">
-						    <label for="txtTen" class="col-sm-2 control-label">Branch ID(*):  </label>
+						    <label for="txtTen" class="col-sm-2 control-label">Supplier ID(*):  </label>
 							<div class="col-sm-10">
-								  <input type="text" name="txtID" id="txtID" class="form-control" placeholder="Branch ID" readonly 
-								  value='<?php echo $row['branch_id'] ?>'>
+								  <input type="text" name="txtID" id="txtID" class="form-control" placeholder="Supplier ID" readonly 
+								  value='<?php echo $row['supplierid'] ?>'>
 							</div>
 					</div>	
 				 <div class="form-group">
-						    <label for="txtTen" class="col-sm-2 control-label">Branch Name(*):  </label>
+						    <label for="txtTen" class="col-sm-2 control-label">Supplier Name(*):  </label>
 							<div class="col-sm-10">
-								  <input type="text" name="txtName" id="txtName" class="form-control" placeholder="Branch Name" 
-								  value='<?php echo $row['branch_name'] ?>'>
+								  <input type="text" name="txtName" id="txtName" class="form-control" placeholder="Supplier Name" 
+								  value='<?php echo $row['supplier_name'] ?>'>
 							</div>
 					</div>
                     
@@ -51,7 +51,7 @@
 					<div class="form-group">
 						<div class="col-sm-offset-2 col-sm-10">
 						      <input type="submit"  class="site-btn" name="btnUpdate" id="btnUpdate" value="Update"/>
-                              <input type="button" class="site-btn" name="btnIgnore"  id="btnIgnore" value="Ignore" onclick="window.location='?page=branch'" />
+                              <input type="button" class="site-btn" name="btnIgnore"  id="btnIgnore" value="Ignore" onclick="window.location='?page=supplier'" />
                               	
 						</div>
 					</div>
@@ -74,8 +74,8 @@
 			}
 			else
 			{
-				pg_query($conn, "UPDATE branch set branch_name = '$name' where branch_id = '$id'");
-				echo '<meta http-equiv="refresh" content="0;URL =?page=branch"/>';
+				pg_query($conn, "UPDATE supplier set suppliername = '$name' where supplierid = '$id'");
+				echo '<meta http-equiv="refresh" content="0;URL =?page=supplier"/>';
 			}
 		}
 	?>
