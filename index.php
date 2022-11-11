@@ -391,7 +391,7 @@ include_once("connection.php");
     }
     else if($page=="updateSupp")
     {
-        include_once('update_Supp.php');
+        include_once('update_supplier.php');
     }    
        
     }else
